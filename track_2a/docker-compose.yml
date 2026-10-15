@@ -1,0 +1,82 @@
+# Hack Apertus Track 2A - See It, Say It, Pick It
+#
+#   ollama     Qwen2.5-VL 7B: looks at the photo, writes the scene graph
+#   apertus    vLLM serving Apertus-v1.5-8B: decides and plans
+#   pipeline   our Python code (src/), talks to both servers
+
+services:
+
+  ollama:
+    image: ollama/ollama:latest   # official Ollama image
+    # Start the server, wait until it answers, then download Qwen
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        ollama serve &
+        until ollama list > /dev/null 2>&1; do sleep 1; done
+        ollama pull qwen2.5vl:7b
+        wait
+    # The box is "ready" only once Qwen is downloaded
+    healthcheck:
+      test: ["CMD", "ollama", "show", "qwen2.5vl:7b"]
+      interval: 10s
+      start_period: 1800s
+    deploy:                       # give this box access to the GPU
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  apertus:
+    # Official Apertus 1.5 vLLM image + bitsandbytes (4-bit)
+    build:
+      context: ./src/docker
+      dockerfile: Dockerfile.apertus-4bit
+    ipc: host
+    environment:
+      HF_TOKEN: ${HF_TOKEN:-}              # Hugging Face token, needed to download Apertus
+      VLLM_WSL2_ENABLE_PIN_MEMORY: "1"     # needed under WSL2, harmless elsewhere
+    entrypoint: ["vllm"]
+    command: >
+      serve swiss-ai/Apertus-v1.5-8B
+      --chat-template-content-format string
+      --gpu-memory-utilization 0.8 --max-model-len 8192
+      --quantization bitsandbytes --load-format bitsandbytes
+      --kv-cache-dtype fp8 --enforce-eager
+      --host 0.0.0.0 --port 8000
+    # The box is "ready" once vLLM answers on /health
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 15s
+      start_period: 1800s
+    deploy:                       # give this box access to the GPU
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  pipeline:
+    # Our code (src/) and the scenes (data/), see src/Dockerfile
+    build:
+      context: .
+      dockerfile: src/Dockerfile
+    environment:
+      # Variables required by the Hack Apertus template
+      LLM_NAME: ${LLM_NAME:-swiss-ai/Apertus-v1.5-8B}
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://apertus:8000/v1}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      # Where Qwen2.5-VL answers
+      VISION_BASE_URL: http://ollama:11434
+    # The only link to a real folder: the results come out here
+    volumes:
+      - ./outputs:/app/outputs
+    # Wait until both models are ready
+    depends_on:
+      ollama:
+        condition: service_healthy
+      apertus:
+        condition: service_healthy

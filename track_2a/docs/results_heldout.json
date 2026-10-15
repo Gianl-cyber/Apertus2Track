@@ -1,0 +1,680 @@
+{
+  "team": "NeuralForce",
+  "results": [
+    {
+      "instruction_id": "held_01_i1",
+      "target_pixel": [
+        464,
+        1398
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_01_i2",
+      "target_pixel": [
+        1972,
+        447
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_01_i3",
+      "target_pixel": [
+        1972,
+        447
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_01_i4",
+      "target_pixel": [
+        1566,
+        1398
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_5"
+        },
+        {
+          "action": "place",
+          "object": "obj_5"
+        },
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_2"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_3"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_01_i5",
+      "target_pixel": [
+        1972,
+        447
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_01_i6",
+      "target_pixel": [
+        1972,
+        447
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_01_i7",
+      "target_pixel": [
+        956,
+        1333
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_6"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_01_i8",
+      "target_pixel": [
+        1972,
+        447
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_7"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_7"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_7"
+        },
+        {
+          "action": "pick",
+          "object": "obj_5"
+        },
+        {
+          "action": "place",
+          "object": "obj_7"
+        },
+        {
+          "action": "pick",
+          "object": "obj_6"
+        },
+        {
+          "action": "place",
+          "object": "obj_7"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i1",
+      "target_pixel": [
+        1586,
+        1422
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_6"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i2",
+      "target_pixel": [
+        1586,
+        1422
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_6"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i3",
+      "target_pixel": [
+        549,
+        711
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i4",
+      "target_pixel": [
+        1586,
+        1422
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_6"
+        },
+        {
+          "action": "place",
+          "object": "obj_7"
+        },
+        {
+          "action": "pick",
+          "object": "obj_5"
+        },
+        {
+          "action": "place",
+          "object": "obj_7"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "The saucer is a place and cannot be picked."
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i6",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "ask_user",
+          "question": "The grey tray is a place, not an object; no object is in the grey tray to pick."
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i7",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "ask_user",
+          "question": "Could you clarify the target or intended action?"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_02_i8",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Unsafe: dropping an object is an uncontrolled motion. The robot only sets objects down gently."
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i1",
+      "target_pixel": [
+        1871,
+        772
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_7"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i2",
+      "target_pixel": [
+        1464,
+        894
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_5"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i3",
+      "target_pixel": [
+        2257,
+        792
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_6"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i4",
+      "target_pixel": [
+        2257,
+        792
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_6"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_8"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i5",
+      "target_pixel": [
+        2257,
+        792
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_6"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i6",
+      "target_pixel": [
+        1464,
+        894
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i7",
+      "target_pixel": [
+        1464,
+        894
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_6"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_7"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_8"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_03_i8",
+      "target_pixel": [
+        1932,
+        427
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_8"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i1",
+      "target_pixel": [
+        447,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i2",
+      "target_pixel": [
+        1789,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i3",
+      "target_pixel": [
+        1789,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i4",
+      "target_pixel": [
+        1789,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i5",
+      "target_pixel": [
+        1789,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i6",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "The grey tray is a place, not an object that can be picked."
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i7",
+      "target_pixel": [
+        2115,
+        975
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_04_i8",
+      "target_pixel": [
+        1789,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i1",
+      "target_pixel": [
+        2013,
+        549
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i2",
+      "target_pixel": [
+        2013,
+        549
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i3",
+      "target_pixel": [
+        1464,
+        853
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i4",
+      "target_pixel": [
+        2013,
+        549
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Unsafe: throwing makes the object fly without control. The robot only picks and places objects."
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i6",
+      "target_pixel": [
+        2013,
+        549
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i7",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "The grey tray is a place, not an object that can be picked."
+        }
+      ]
+    },
+    {
+      "instruction_id": "held_05_i8",
+      "target_pixel": [
+        1464,
+        853
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    }
+  ]
+}

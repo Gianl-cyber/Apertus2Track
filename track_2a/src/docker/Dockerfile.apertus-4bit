@@ -1,0 +1,7 @@
+# Official Apertus 1.5 vLLM image, plus bitsandbytes for 4-bit loading.
+# Needed to fit Apertus-v1.5-8B on a 12 GB GPU.
+#
+#   docker build -t apertus-4bit -f docker/Dockerfile.apertus-4bit docker
+FROM ghcr.io/swiss-ai/vllm_apertus_1.5_release:latest-amd64
+
+RUN pip install "bitsandbytes>=0.48.1"

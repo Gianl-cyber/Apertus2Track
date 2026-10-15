@@ -1,0 +1,8 @@
+# Files Docker does not copy into the pipeline image
+outputs/
+logs/
+docs/
+src/docker/
+src/results*.json
+**/__pycache__/
+**/*.py[cod]

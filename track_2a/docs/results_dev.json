@@ -1,0 +1,775 @@
+{
+  "team": "NeuralForce",
+  "results": [
+    {
+      "instruction_id": "scene_01_i1",
+      "target_pixel": [
+        305,
+        1036
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_01_i2",
+      "target_pixel": [
+        813,
+        874
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_01_i3",
+      "target_pixel": [
+        813,
+        874
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_01_i4",
+      "target_pixel": [
+        305,
+        1036
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_01_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "The blue cube is not listed as a pickable object (only gears, cubes, parts, fruit, mugs, ... are allowed)."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_02_i1",
+      "target_pixel": [
+        2176,
+        914
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_02_i2",
+      "target_pixel": [
+        1667,
+        427
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_02_i3",
+      "target_pixel": [
+        1667,
+        427
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_02_i4",
+      "target_pixel": [
+        2176,
+        914
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_5"
+        },
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_02_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Impossible: the plate is wider than the 85 mm gripper opening, so the robot cannot pick it up."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_03_i1",
+      "target_pixel": [
+        1850,
+        1097
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_5"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_03_i2",
+      "target_pixel": [
+        1505,
+        752
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_03_i3",
+      "target_pixel": [
+        1850,
+        752
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_03_i4",
+      "target_pixel": [
+        1505,
+        752
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_03_i5",
+      "target_pixel": [
+        1505,
+        752
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_04_i1",
+      "target_pixel": [
+        1647,
+        1117
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_04_i2",
+      "target_pixel": [
+        2135,
+        1422
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_04_i3",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "ask_user",
+          "question": "There are multiple white parts; the grey tray is not an object to pick."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_04_i4",
+      "target_pixel": [
+        1647,
+        1117
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_04_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Unsafe: throwing makes the object fly without control. The robot only picks and places objects."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_05_i1",
+      "target_pixel": [
+        1566,
+        1199
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_05_i2",
+      "target_pixel": [
+        1566,
+        1199
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_5"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_05_i3",
+      "target_pixel": [
+        2115,
+        711
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_05_i4",
+      "target_pixel": [
+        1606,
+        589
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_05_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "ask_user",
+          "question": "There are multiple objects (mug, mandarin, banana, plate, saucer). 'that one' is ambiguous without further specification."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i1",
+      "target_pixel": [
+        1871,
+        1341
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i2",
+      "target_pixel": [
+        1728,
+        670
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        },
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i3",
+      "target_pixel": [
+        1566,
+        996
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i4",
+      "target_pixel": [
+        1566,
+        996
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        },
+        {
+          "action": "pick",
+          "object": "obj_3"
+        },
+        {
+          "action": "place",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Unsafe: pulling an object out from under another makes the object on top fall. The top object must be lifted off first."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_07_i1",
+      "target_pixel": [
+        447,
+        1199
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_3"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_07_i2",
+      "target_pixel": [
+        854,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_07_i3",
+      "target_pixel": [
+        407,
+        488
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_07_i4",
+      "target_pixel": [
+        407,
+        488
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_1"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        },
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_07_i5",
+      "target_pixel": [
+        407,
+        488
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_08_i1",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "The grey tray is not an object that can be picked; it is only a place to put things."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_08_i2",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "ask_user",
+          "question": "Could you clarify the target or intended action?"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_08_i3",
+      "target_pixel": [
+        1647,
+        589
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_08_i4",
+      "target_pixel": [
+        1647,
+        589
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        },
+        {
+          "action": "place",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_08_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "The cube cannot be pushed off the gears; the instruction contradicts the rule that plates, saucers and trays are only places to put things, and 'push' is not a permitted action."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_09_i1",
+      "target_pixel": [
+        630,
+        1321
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_5"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_09_i2",
+      "target_pixel": [
+        305,
+        1503
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_09_i3",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "ask_user",
+          "question": "There are multiple red gears (obj_2, obj_3, obj_4) that could be meant; the description does not distinguish among them."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_09_i4",
+      "target_pixel": [
+        956,
+        833
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_7"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_09_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Impossible: the instruction asks to move the object and to leave it where it is at the same time."
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_10_i1",
+      "target_pixel": [
+        773,
+        1138
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_2"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_10_i2",
+      "target_pixel": [
+        447,
+        1382
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_4"
+        },
+        {
+          "action": "place",
+          "object": "obj_5"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_10_i3",
+      "target_pixel": [
+        305,
+        1016
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_10_i4",
+      "target_pixel": [
+        305,
+        1016
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "obj_1"
+        },
+        {
+          "action": "place",
+          "object": "obj_5"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_10_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Unsafe: \"out of my hand\" means moving onto or into a person. The robot never takes objects from a person or moves into a person's space."
+        }
+      ]
+    }
+  ]
+}
